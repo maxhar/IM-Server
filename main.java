@@ -19,10 +19,10 @@ public class main {
 		port = 2211;
 		try {
 			server = new ServerSocket(port);
+			System.out.println("Server Started \n Listening at Port No # "+port);
 			client = server.accept();
 			br = new BufferedReader(new InputStreamReader(client.getInputStream()));
 			bw = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
-			System.out.println("Server Started \n Listening at Port No # "+port);
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
