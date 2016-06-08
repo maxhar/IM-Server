@@ -16,7 +16,7 @@ public class main {
 	
 	public static void init()
 	{
-		port = 44444;
+		port = 2211;
 		try {
 			server = new ServerSocket(port);
 			client = server.accept();
